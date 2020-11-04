@@ -1,2 +1,2 @@
-# Java-Chess
- Chess game made in Java.
+# Kotlin-Chess
+ Chess game made in Kotlin.
