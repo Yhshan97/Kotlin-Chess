@@ -7,6 +7,7 @@ class Board {
 
     //
     // Initialize the board with default positions
+    // Called when a new board is created
     //
     init {
         var template = arrayOf(

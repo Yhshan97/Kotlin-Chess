@@ -1,10 +1,9 @@
 package gameObjects
 
-class Rook(color: Color) : Piece(){
+class Rook(c: Color) : Piece(c){
 
     init {
-        super.color = color
-        super.strIcon = when (color)
+        strIcon = when (c)
         {
             Color.White -> "♖"
             else -> "♜"

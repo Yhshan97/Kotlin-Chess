@@ -1,10 +1,9 @@
 package gameObjects
 
-class Pawn(color: Color) : Piece() {
+class Pawn(c: Color) : Piece(c) {
 
     init {
-        super.color = color
-        super.strIcon = when (color)
+        strIcon = when (c)
         {
             Color.White -> "♙"
             else -> "♟"

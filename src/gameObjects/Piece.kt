@@ -1,10 +1,8 @@
 package gameObjects
 
-open class Piece (){
+open class Piece(c: Color){
     lateinit var strIcon:String
-    lateinit var color:Color
+    var color = c
 
-    override fun toString(): String {
-        return strIcon
-    }
+    override fun toString(): String = strIcon
 }

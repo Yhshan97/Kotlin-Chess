@@ -1,9 +1,8 @@
 package gameObjects
 
-class Queen(color:Color) : Piece() {
+class Queen(c:Color) : Piece(c) {
     init {
-        super.color = color
-        super.strIcon = when (color)
+        strIcon = when (c)
         {
             Color.White -> "♕"
             else -> "♛"
