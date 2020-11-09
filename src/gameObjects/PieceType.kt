@@ -1,6 +1,6 @@
 package gameObjects
 
-enum class pieceType(type: Int) {
+enum class PieceType(type: Int) {
     Pawn(1),
     Rook(2),
     Knight(3),

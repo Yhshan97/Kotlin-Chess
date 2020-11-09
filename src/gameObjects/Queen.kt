@@ -8,4 +8,8 @@ class Queen(c:Color) : Piece(c) {
             else -> "♛"
         }
     }
+
+    override fun canMove(board: Board, start: Square, end: Square): Boolean {
+        TODO("Not yet implemented")
+    }
 }
