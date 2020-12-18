@@ -24,12 +24,7 @@ class Knight(c: Color) : Piece(c){
 
         println("Knight move distance in x:$colMove and y:$rowMove")
 
-        if(end.piece?.color == this.color)
-            return false
-        else if(possibleMoves.contains(Point(colMove,rowMove))){
-            return true
-        }
-
-        return false
+        // No ally piece at endPoint && move is contained in possible moves
+        return super.canMove(board, start, end) && Point(colMove,rowMove) in possibleMoves
     }
 }

@@ -10,6 +10,17 @@ class King(c:Color) : Piece(c){
     }
 
     override fun canMove(board: Board, start: Square, end: Square): Boolean {
-        TODO("Not yet implemented")
+        if(!super.canMove(board, start, end)) return false
+
+        val colMove = end.col - start.col
+        val rowMove = end.row - start.row
+
+
+        //TODO("Implement king and rook switch")
+
+        //TODO("verify that he is not in check / other verifications")
+
+
+        return colMove <= 1 && rowMove <= 1
     }
 }

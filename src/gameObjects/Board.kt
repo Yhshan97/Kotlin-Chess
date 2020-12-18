@@ -63,7 +63,7 @@ class Board {
                 val p = squares[row - 1][col].piece?.strIcon
 
                 // Display Icon if available or empty square whose color depend on the square's position
-                line += (p ?: if ((row + col) % 2 != 0) "■" else "□") + " "
+                line += (p ?: if ((row + col) % 2 != 0) "◼" else "□") + " "
             }
 
             line += "| "
